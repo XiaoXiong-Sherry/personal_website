@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Xiao Xiong's Website{% endblock %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="{{ url_for('static', filename='images/profile.jpeg') }}" 
+             alt="Xiao Xiong" 
+             class="img-fluid rounded-circle profile-image"
+             style="max-width: 250px;">
+    </div>
+    <div class="col-md-8 text-center text-md-start">
+        <h1 class="greeting">Hello, I am Xiao Xiong.</h1>
+        <p class="lead intro-text">This is my personal website where I share my work and thoughts.</p>
+        <p class="highlight-text">I am actively seeking Computer Science PhD opportunities starting Fall 2025!</p>
+    </div>
+</div>
+{% endblock %} 
